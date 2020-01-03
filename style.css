@@ -1,0 +1,285 @@
+*
+{
+	margin:0;
+	padding:0;
+}
+
+
+/*----------navigation-----------------*/
+#nav-bar
+{
+	position: sticky;
+	top:0;
+	z-index: 10;
+	
+}
+.navbar-brand img
+{
+	height:40px;
+	padding-left:30px;
+	
+}
+.navbar-nav li
+{
+	padding:0 10px;
+	
+}
+.navbar-nav a
+{
+	float:right;
+	text-align:left;
+	
+}
+#nav-bar ul li a:hover
+{
+	color:#007bff!important;
+}
+.navbar-brand
+{
+	background:#fff;
+	width:1px;
+	height:1px;
+	border-radius:20%;
+	position: absolute;
+}
+.navbar-toggler
+{
+	border:none!important;
+}
+.nav-link
+{
+	color:#555!important;
+	font-weight:600;
+	font-size:16px;
+	
+}
+#slider
+{
+	width:100%;
+	
+}
+
+/*-----------SLIDERRR-------------*/
+
+#slider
+{
+	width:%;
+}
+.carousel-caption
+{
+	top:50%;
+	transform:translateY(-50%);
+	bottom:initial!important; 
+}
+.carousel-caption h5
+{
+	color:#fff;
+	font-size:42px;
+}
+/*-----------------about-----------*/
+#about
+{
+	padding-top:50px;
+	padding-bottom:50px;
+	color:#555;
+	
+}
+#about .btn
+{
+	margin-top:20px;
+	margin-bottom:30px;
+	
+}.about-content
+{
+	padding-top:20px;
+	
+}
+.skills-bar
+{
+	margin-bottom:6px;
+	font-weight:600;
+}
+.progress-bar
+{
+	border-radius:10px:
+	
+}
+.progress
+{
+	border-radius: 16px;
+	margin-bottom:20px;
+}
+
+/*--------------services---------------*/
+#services
+{
+	background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(imgs/food7.jpg);
+	background-size:cover;
+	background-position:center;
+	color : #efefef!important;
+	background-attachment:fixed;
+	padding-top:50px;
+	padding-bottom:50px;
+}
+#services h1
+{
+	text-align:center;
+	color:#efefef!important;
+	padding-bottom:10px;
+	
+}
+#services h1::after
+{
+	content:'';
+	background:#efefef;
+	display:block;
+	height:3px;
+	width:170px;
+	margin:20px auto 5px;
+}
+.services
+{
+	margin-top:50px;
+}
+.services .col-md-3:hover
+{
+	background:#007bff;
+	cursor:pointer;
+	transition:0.7s;
+}
+#promo
+{
+	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(imgs/food7.jpg);
+	background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(imgs/food7.jpg);
+	background-size:cover;
+	background-position:center;
+	color : #fff;
+	background-attachment:fixed;
+	text-align:center;
+	padding:100px;
+	font-family:sans-serif;
+	font-size:38px;
+}
+
+/*-------menu------------*/
+#menu
+{
+	padding:40px 0;
+	background-color:#efefef;
+	
+}
+#menu h1
+{
+	text-align:center;
+	padding-bottom:10px;
+	
+}
+#menu h1::after
+{
+	content:'';
+	display:block;
+	height:3px;
+	width:170px;
+	margin:20px auto 5px;
+}
+
+.single-menu
+{
+	margin:10px auto;
+	display:inline;
+	float:left;
+	width:100%;
+	background-color:#fff;
+	transition:0.5s;
+}
+.single-menu:hover{
+	box-shadow:0 2px 20px #333;
+}
+.menu-head
+{
+	background-color:2196f3;
+	display:inline;
+	float:left;
+	padding:10px 5px;
+	text-align:center;
+	width:100%;
+}
+.menu-head h2
+{
+	color:#fff;
+	font-size:30px;
+	font-weight:bold;
+	margin-bottom:5px;
+	padding:5px;
+	text-transform:uppercase;
+	
+}
+.menu-head p
+{
+	font-size:25px;
+	color:#ccc;
+	font-weight:bold;
+	line-height:30px;
+	
+}
+.menu-contents
+{
+	display:inline;
+	float:left;
+	width:100%;
+	padding:0 15px;
+	
+}
+.menu-contents ul li
+{
+	border-bottom:1px sloid #efefef;
+	padding:15px 10px;
+	list-style:none;
+	
+}
+ul li:last-child
+{
+	border:none;
+}
+.fa-check-circle
+{
+	color:green;
+	margin-right:10px;
+	font-size:20px;
+	
+}
+.fa-times-circle
+{
+	color:red;
+	margin-right:10px;
+	font-size:20px;
+	
+}
+.menu-button
+{
+	display:inline;
+	float:left;
+	padding:15px 15px 30px;
+	text-align:center;
+	width:100%;
+	
+}
+.order-btn
+{
+	background-color:#2196f3;
+	border-radius:3px;
+	display:inline-block;
+	font-size:10px;
+	padding:15px 50px;
+	transition:0.5s;
+	
+}
+.order-btn:hover{
+	border-color:1px solid #fff;
+	background-color:#3f51b5;
+	
+}
+a{
+	text-decoration:none!important;
+	color:#fff!important;
+}
