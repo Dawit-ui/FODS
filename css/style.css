@@ -1,0 +1,63 @@
+ body {
+	background-image: url(img/frenchfries.jpg);
+    background-size: cover;
+    background-position: center; 
+     }
+     body p{
+        font-size: 3em;
+        line-height: 3;
+        text-align: center;
+         font-size: 25px;
+     }
+     
+     a{
+        color: #fff !important;
+        margin-top: -200px !important;
+     }
+     h1{
+        color: black !important;
+        margin-top: 100px ! important;
+        text-align: center;
+        text-transform: uppercase;
+
+     }
+     h6{
+       font-size: 2em;
+        line-height: 2;
+        text-align: center;
+
+     }
+     h2{
+        color: black !important;
+        margin-top: 200px ! important;
+        text-align: center;
+        text-transform: uppercase;
+    }
+     title{
+        color: #fff;
+        text-align: center;
+     }
+     title1{
+        color: #fff;
+        text-align: center;
+     }
+     title2{
+        color: #fff;
+        text-align: center;
+     }
+#banner
+{
+  background-image: url(img/food.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 5px solid #dedede;
+  height: 300px;
+}
+#wrapper
+{
+     width: 10px;
+     background-color: white;
+     margin: 0 auto;
+     padding: 100px;
+     border: 10px solid #dedede;
+}
