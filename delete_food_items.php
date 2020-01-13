@@ -92,6 +92,21 @@ header('Location: managerlogin.php');
           <h3 style="margin-bottom: 25px; text-align: center; font-size: 30px;"> DELETE YOUR FOOD ITEMS FROM HERE </h3>
 
 
+<?php
+
+
+
+// Storing Session
+$user_check=$_SESSION['login_user1'];
+$sql = "SELECT * FROM food f WHERE f.options = 'ENABLE' AND f.R_ID IN (SELECT r.R_ID FROM RESTAURANTS r WHERE r.M_ID='$user_check') ORDER BY F_ID";
+$result = mysqli_query($conn, $sql);
+
+
+if (mysqli_num_rows($result) > 0)
+{
+
+  ?>
+
 
   <table class="table table-striped">
     <thead class="thead-dark">
