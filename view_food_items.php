@@ -92,7 +92,57 @@ header('Location: managerlogin.php'); // Redirecting To Home Page
           <h3 style="margin-bottom: 25px; text-align: center; font-size: 30px;"> YOUR FOOD ITEMS LIST </h3>
 
 
+<?php
 
+// Storing Session
+$user_check=$_SESSION['login_user1'];
+$sql = "SELECT * FROM food f WHERE f.R_ID IN (SELECT r.R_ID FROM RESTAURANTS r WHERE r.M_ID='$user_check') ORDER BY F_ID";
+$result = mysqli_query($conn, $sql);
+
+
+if (mysqli_num_rows($result) > 0)
+{
+
+  ?>
+
+  <table class="table table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th>  </th>
+        <th> Food ID </th>
+        <th> Food Name </th>
+        <th> Price </th>
+        <th> Description </th>
+        <th> Restaurant ID </th>
+      </tr>
+    </thead>
+
+    <?PHP
+      //OUTPUT DATA OF EACH ROW
+      while($row = mysqli_fetch_assoc($result)){
+    ?>
+
+  <tbody>
+    <tr>
+      <td> <span class="glyphicon glyphicon-menu-right"></span> </td>
+      <td><?php echo $row["F_ID"]; ?></td>
+      <td><?php echo $row["name"]; ?></td>
+      <td><?php echo $row["price"]; ?></td>
+      <td><?php echo $row["description"]; ?></td>
+      <td><?php echo $row["R_ID"]; ?></td>
+    </tr>
+  </tbody>
+  
+  <?php } ?>
+  </table>
+    <br>
+
+
+  <?php } else { ?>
+
+  <h4><center>0 RESULTS</center> </h4>
+
+  <?php } ?>
   </table>
     <br>
 
